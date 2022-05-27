@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="577.0" prefWidth="736.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <Label layoutX="171.0" layoutY="34.0" text="FORM INPUT DATA KIPAS">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="126.0" text="Kode_Kipas" />
+      <Label layoutX="96.0" layoutY="185.0" text="Nama Produk" />
+      <Label layoutX="93.0" layoutY="248.0" text="Tanggal Produksi" />
+      <Label layoutX="93.0" layoutY="321.0" text="Merk" />
+      <Label layoutX="93.0" layoutY="397.0" text="Ukuran" />
+      <Label layoutX="90.0" layoutY="460.0" text="Harga" />
+      <RadioButton fx:id="rdPanasonic" layoutX="273.0" layoutY="321.0" mnemonicParsing="false" text="Panasonic" />
+      <RadioButton fx:id="rdLG" layoutX="403.0" layoutY="321.0" mnemonicParsing="false" text="LG" />
+      <RadioButton fx:id="rdSony" layoutX="506.0" layoutY="321.0" mnemonicParsing="false" text="Sony" />
+      <TextField fx:id="kd_kipas" layoutX="261.0" layoutY="121.0" promptText="Isi Kode Produk" />
+      <TextField fx:id="tfNama" layoutX="261.0" layoutY="180.0" promptText="Nama Produk" />
+      <TextField fx:id="tfHarga" layoutX="261.0" layoutY="455.0" promptText="Harga Produk" />
+      <ComboBox fx:id="cbUkuran" layoutX="261.0" layoutY="392.0" prefWidth="150.0" promptText="Pilih Ukuran" />
+      <DatePicker fx:id="dpTanggalProduksi" layoutX="259.0" layoutY="243.0" promptText="Pilih Tanggal" />
+      <Button fx:id="btnSave" layoutX="589.0" layoutY="505.0" mnemonicParsing="false" text="Save" />
+   </children>
+</AnchorPane>
